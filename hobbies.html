@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hobbies | Emma Gebbie</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Playfair+Display:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="resources/css/styles.css">
+</head>
+<body class="page-inner">
+
+  <header class="navbar navbar-expand-md navbar-dark">
+  <div class="container-fluid">
+    
+    <p class="navbar-brand mb-0">Emma Gebbie</p>
+
+    <nav class="navbar-nav ms-auto">
+      <a class="nav-link" href="home.html">Home</a>
+      <a class="nav-link" href="hobbies.html">Hobbies</a>
+      <a class="nav-link" href="projects.html">Projects</a>
+      <a class="nav-link" href="resume.html">Resume</a>
+    </nav>
+
+  </div>
+</header>
+
+  <main>
+    <div class="page-head">
+      <h1>Hobbies</h1>
+      <ul>
+        <li>Fitness & Working Out</li>
+        <li>Traveling</li>
+        <li>Fashion & Styling</li>
+      </ul>
+    </div>
+<!--
+Bootstrap Annotation 1:
+Class: container
+Element: Hobby content
+What it does: Centers the content and provides spacing.
+-->
+
+<!--
+Bootstrap Class: row 
+Element: Hobby card layout
+What it does: Creates a row for Bootstrap's grid system.
+-->
+
+<!--
+Bootstrap Class: col-md-4
+Element: Individual hobby cards
+What it does: Makes each hobby card take up one-third of the row. 
+-->
+<section class="container py-4">
+  <div class="row g-4">
+
+    <div class="col-12 col-md-4">
+      <div class="card h-100">
+       <img src="resources/img/Fitness.png" class="card-img-top" alt="Fitness and working out">
+        <div class="card-body">
+          <h2 class="card-title">Fitness & Working Out</h2>
+          <p class="card-text">I love starting my day with a good workout and staying active.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-4">
+      <div class="card h-100">
+        <img src="resources/img/Travel.png" class="card-img-top" alt="Traveling and exploring new places">
+        <div class="card-body">
+          <h2 class="card-title">Traveling</h2>
+          <p class="card-text">I love exploring new places and experiencing different cultures. I recently studied abroad in Sydney, Australia and Madrid, Spain.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-4">
+      <div class="card h-100">
+       <img src="resources/img/Fashion.png" class="card-img-top" alt="Fashion and styling">
+        <div class="card-body">
+          <h2 class="card-title">Fashion & Styling</h2>
+          <p class="card-text">I have loved fashion my whole life. I got to experience the fashion industry first hand this summer while interning for Urban Outfitters.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- FIX: this was a stray "</div>" that did not match the opening "<section class="container py-4">"
+       above, leaving the <section> element unclosed (invalid HTML). Changed to "</section>" so every
+       tag that is opened is properly closed. -->
+</section>
+  </main>
+
+  <footer>
+    <a href="https://www.linkedin.com/in/emma-gebbie" target="_blank">LinkedIn</a>
+  </footer>
+
+</body>
+</html>
